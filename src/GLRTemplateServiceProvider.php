@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace CoenSchutte\GLRTemplate;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use CoenSchutte\GLRTemplate\Commands\GLRTemplateCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class GLRTemplateServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('glrtemplate')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_glrtemplate_table')
+            ->hasCommand(GLRTemplateCommand::class);
     }
 }

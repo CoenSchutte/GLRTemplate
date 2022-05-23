@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace CoenSchutte\GLRTemplate\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class GLRTemplateCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'glrtemplate';
 
     public $description = 'My command';
 
